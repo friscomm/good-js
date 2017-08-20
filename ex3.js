@@ -39,13 +39,12 @@ function composeb(func, func2){
 function limit(func, count){
   return function(a,b){
     if(count>=1){
-      count-=1;
+      count -= 1;
       return func(a,b);
     }
     return undefined;
   }
 }
-
 
 
 let doubl = twice(add);
@@ -59,7 +58,7 @@ let add_ltd = limit(add,1);
 // console.log(`This is the compose function: ${compose(doubl, square)(5)}`);
 // console.log(`This is the composeb function: ${composeb(add, multiply)(2,3,7)}`);
 // console.log(add_ltd);
-console.log(`This is the limit function: ${add_ltd(1,2)}`);
+console.log(`This is the limit function: ${add_ltd(11,2)}`);
 console.log(`This is the limit function: ${add_ltd(4,5)}`);
 console.log(`This is the limit function: ${add_ltd(4,5)}`);
 console.log(`This is the limit function: ${add_ltd(4,5)}`);
