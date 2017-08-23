@@ -12,7 +12,7 @@ function from(start){
 let index = from(0);
 
 
-//Write a to funciton that takes a generator and an end value, and returns a generator that will produce numbesr up to that limit
+//Write a to funciton that takes a generator and an end value, and returns a generator that will produce numbers up to that limit
 function to(func, limit){
   return function(){
     let num = func();
